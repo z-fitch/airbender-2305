@@ -1,0 +1,16 @@
+<h1>Search Results</h1>
+
+<h3> Current Resident Count: <%= @facade.nation_characters.count  %></h3>
+
+<ul>
+  <% @facade.nation_characters.each do |character| %>
+  <% if character.photo != nil %>
+  <img src=<%=character.photo%> >
+  <% end %>
+    <li>Name: <%= character.name %></li>
+    <li>Allies: <%= character.allies %></li>
+    <li>Enemies: <%= character.enemies %></li>
+    <li>Affiliations: <%= character.affiliation %></li>
+    <br>
+  <% end  %>
+</ul>
