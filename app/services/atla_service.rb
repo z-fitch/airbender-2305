@@ -1,4 +1,4 @@
-class ParksService
+class AtlaService
 
   def nation_search(nation)
     get_url("api/v1/characters?affiliation=#{nation}")
